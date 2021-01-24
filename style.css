@@ -1,0 +1,538 @@
+/* Mise en place de la police */
+@font-face {
+    font-family: HK;
+    src: url("font/HKGrotesk-Regular.otf");
+}
+
+@font-face {
+    font-family: SF;
+    src: url("font/SFUIText-Regular.ttf");
+}
+
+/* Reset de la page */
+* {
+    font-family: 'SF';
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: border-box;
+}
+
+/* Première page Qovery Engine*/
+.firstpage {
+    width: 100%;
+    min-width: 1250px;
+    min-height: 926px;
+    background:  #151B2B;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Premier contenu de la première page */
+.contain1 {
+    width: 50%;
+}
+
+.contain1 .logo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 5%;
+    left: 20%;
+}
+
+.contain1 .logo p {
+    font-family: 'HK';
+    font-weight: bold;
+    font-size: 25px;
+    color: gray;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.contain1 .info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 20%;
+    left: 20%;
+}
+
+.contain1 .info .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contain1 .info .title h1 {
+    font-family: 'HK';
+    color: #fff;
+    font-size: 46px;
+    font-weight: 800;
+    padding-right: 15px;
+}
+
+.contain1 .info .title .star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 21px;
+    color: black;
+    width: 101px;
+    height: 36px;
+}
+
+.contain1 .info .title .star img {
+    padding-right: 5px;
+}
+
+.contain1 .info .title .star p span {
+    padding-left: 10px;
+}
+
+.contain1 .info .text1 {
+    width: 60%;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 26px;
+}
+
+.contain1 .info .text2 {
+    width: 60%; 
+    color: #8686B2;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.contain1 .info .button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 48px;
+}
+
+.contain1 .info .button .github {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 16px;
+    margin-right: 24px;
+    position: static;
+    width: 157px;
+    height: 39px;
+    left: 0px;
+    top: 0px;
+    background: #454658;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.contain1 .info .button .github p {
+    padding-left: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.contain1 .info .button .github:hover {
+    cursor: pointer;
+    width: 170px;
+    height: 45px;
+}
+
+.contain1 .info .button .discord {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 9px 16px;
+    position: static;
+    width: 182px;
+    height: 39px;
+    left: 181.16px;
+    top: 0px;
+    background: #6578C0;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.contain1 .info .button .discord p {
+    padding-left: 7px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.contain1 .info .button .discord:hover {
+    cursor: pointer;
+    width: 190px;
+    height: 48px;
+}
+
+/* Deuxième contenu de la première page */
+.contain2 {
+    width: 50%;
+}
+
+.contain2 img {
+    position: relative;
+    width: 567px;
+    height: 687px;
+    top: 80px;
+    left: 10%;
+}
+
+/* Deuxième pages "How does it work"*/
+.secondpage {
+    width: 100%;
+    min-width: 1250px;
+    min-height: 784px;
+    background: #F9F9FD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secondpage .how-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.secondpage .how-text h2 {
+    font-family: 'HK';
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 32px;
+    color: 454658;
+    margin-bottom: 24px;
+}
+
+.secondpage .how-text p {
+    width: 837px;
+    height: 72px;
+    display: flex;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: #454658;
+}
+
+.secondpage .how-img {
+    width: 853px;
+    height: 472px;
+    margin-top: 32px;
+}
+
+/* Troisième pages du site AskOlga*/
+
+.thirdpage {
+    width: 100%;
+    min-width: 1250px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    background: #37568b;
+    color: #fff;
+}
+
+.ask {
+    font-family: 'HK';
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.bouton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.bouton button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    outline: none;
+    background: #37568b;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    box-shadow: -2px -2px 8px rgba(55, 55, 58, 0.603), 
+                2px 2px 8px rgba(32, 45, 68, 0.514);
+    margin-bottom: 50px;
+}
+
+.bouton button:hover {
+    background: #446297;
+    cursor: pointer;
+}
+
+.bouton button:focus {
+    font-size: 18px;
+    opacity: 75%;
+    background: #446297;
+}
+
+.bouton .fact, .paie {
+    margin-right: 35px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result .nb-result {
+    font-family: 'HK';
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.result .element {
+    width: 500px;
+    align-items: center;
+    text-align: center;
+}
+
+.element .case {
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+    padding: 20px 20px 15px 15px;
+    background: #37568b;
+    animation: apparition 2s;
+}
+
+.element .case.black {
+    background: #2c4470;
+    animation: apparition 2s;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Quatrième pages du site page d'informations*/
+.fourthpage {
+    width: 100%;
+    min-width: 1250px;
+    height: 1500px;
+    min-height: 100vh;
+    background: #F9F9FD;
+    padding-top: 41px;
+}
+
+.grp {
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
+    justify-content: space-around;
+    margin-left: 189px;
+    margin-right: 192px;
+    margin-bottom: 65px;
+}
+
+.grp .item {
+    max-width: 428px;;
+}
+
+.grp .item .illustration {
+    padding-bottom: 34px;
+}
+
+.grp .item .information h3 {
+    font-family: 'HK';
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 110%;
+    color: #454658;
+    padding-bottom: 24px;
+}
+
+.grp .item .information .info1 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #454658;
+    padding-bottom: 24px;
+}
+
+.grp .item .information .info2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #454658;
+    padding-bottom: 15px;
+}
+
+/* Footer du site */
+
+footer {
+    width: 100%;
+    min-width: 1250px;
+    height: 150px;
+    background: #151B2B;
+}
+
+/* Responsive du site */
+
+@media screen and (max-width:1400px) {
+    /* Première page Qovery Engine*/
+    .firstpage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 1600px;
+    }
+    .contain1 {
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .contain1 .logo {
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+    .contain1 .logo img {
+        width: 100px;
+    }
+    .contain1 .logo p {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+    .contain1 .info {
+        position: relative;
+        width: 70%;
+        left: 25%;
+    }
+    .contain1 .info .title h1 {
+        font-size: 60px;
+    }
+    .contain1 .info .title .star {
+        width: 200px;
+        height: 60px;
+        font-size: 25px;
+    }
+    .contain1 .info .title .star img {
+        width: 50px;
+    }
+    .contain1 .info .text1 p {
+        font-size: 40px;
+    }
+    .contain1 .info .text2 p {
+        font-size: 35px;
+    }
+    .contain1 .info .button .github {
+        width: 250px;
+        height: 70px;
+    }
+    .contain1 .info .button .github img {
+        width: 50px;
+    }
+    .contain1 .info .button .github p {
+        font-size: 22px;
+    }
+    .contain1 .info .button .discord {
+        width: 250px;
+        height: 70px;
+    }
+    .contain1 .info .button .discord img {
+        width: 50px;
+    }
+    .contain1 .info .button .discord p {
+        font-size: 22px;
+    }
+
+    /* Deuxième pages "How does it work"*/
+    .secondpage {
+        min-height: 900px;
+    }
+    .secondpage .how-text h2 {
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+    .secondpage .how-text p {
+        font-size: 30px;
+    }
+    .secondpage .how-img img {
+        position: relative;
+        top: 25%;
+    }
+
+    /* Troisième pages "AskOlga"*/
+    .thirdpage {
+        height: auto;
+    }
+    .ask {
+        font-size: 50px;
+    }
+    .bouton button {
+        width: 300px;
+        height: 80px;
+        font-size: 40px;
+    }
+    .bouton button:focus {
+        font-size: 35px;
+    }
+    .result {
+        margin-bottom: 40px;
+    }
+    .result .nb-result {
+        font-size: 50px;
+    }
+    .result .element {
+        font-size: 25px;
+    }
+    .result .element {
+        width: 800px;
+    }
+
+    /* Quatrième pages "page d'informations"*/
+    .fourthpage {
+        height: auto;
+    }
+    .fourthpage .grp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fourthpage .grp .item .illustration img {
+        width: 300px;
+        position: relative;
+        left: 15%;
+        margin-top: 80px;
+    }
+    .fourthpage .grp .item .information {
+        position: relative;
+        left: -35%;
+        width: 800px;
+        padding-top: 30px;
+    }
+    .fourthpage .grp .item .information h3 {
+        font-size: 50px;
+    }
+    .fourthpage .grp .item .information .info1 {
+        font-size: 30px;
+    }
+    .fourthpage .grp .item .information .info2 {
+        font-size: 30px;
+    }
+    .fourthpage .grp .item .information a {
+        font-size: 25px;
+    }
+}
+
